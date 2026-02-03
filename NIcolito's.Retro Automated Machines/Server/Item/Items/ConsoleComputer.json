@@ -1,0 +1,156 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bench_Computer.name",
+    "Description": "server.items.Bench_Computer.description"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "Quantity": 4,
+        "ItemId": "Ingredient_Bar_Iron"
+      },
+      {
+        "Quantity": 3,
+        "ItemId": "Ingredient_Crystal_Green"
+      },
+      {
+        "Quantity": 10,
+        "ItemId": "Ingredient_Bar_Copper"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench"
+      }
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/ConsoleComputer.png",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/ConsoleComputer/Console.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/ConsoleComputer/ConsoleTexture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "ConsoleComputer_Block",
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Crafting",
+      "Categories": [
+        {
+          "Id": "Machines",
+          "Icon": "Icons/CraftingCategories/Workbench/Spawn_Robot.png",
+          "Name": "server.benchCategories.computer.machines"
+        },
+        {
+          "Id": "Components",
+          "Icon": "Icons/CraftingCategories/Workbench/Robot_Circuit.png",
+          "Name": "server.benchCategories.computer.components"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "Computer"
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim",
+          "Looping": true
+        },
+        "CraftCompletedInstant": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim"
+        },
+        "Tier2": {
+          "CustomModel": "Blocks/Benches/Workbench2.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Workbench2_Texture.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Bench_Workbench2",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench2_Crafting.blockyanim"
+              }
+            }
+          }
+        },
+        "Tier3": {
+          "CustomModel": "Blocks/Benches/Workbench3.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Workbench3_Texture.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Bench_Workbench3",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench3_Crafting.blockyanim"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "ParticleColor": "#939393",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Metal"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      23,
+      315,
+      360
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Model": "Resources/ConsoleComputer/Console.blockymodel",
+  "Texture": "Resources/ConsoleComputer/ConsoleTexture.png"
+}
