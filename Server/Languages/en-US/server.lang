@@ -1,0 +1,13 @@
+items.Bench_Computer.name = Computer
+items.Bench_Computer.description = Make your own robots at home!
+
+items.Robot_Sheriff_Spawner.name = Robot Sheriff
+items.Robot_Sheriff_Spawner.description = Protects your home from the bad guys
+items.Robot_Horse_Spawner.name = Robot Horse
+items.Robot_Horse_Spawner.description - Just like a horse, but robot
+
+items.Weapon_Revolver.name = Revolver
+items.Ingredient_Robot_Circuit.name = Robot Circuit
+
+benchCategories.computer.machines = Machines
+benchCategories.computer.components = Components
